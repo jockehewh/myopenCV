@@ -57,3 +57,26 @@ section{
 .d{
     order:4;
 }
+.d section{
+    display: none;
+    background-color: #efefef;
+    position: relative;
+    top: -53px;
+    left: 207px;
+}
+.d ul{
+    margin-left: 45%;
+    margin-top: 6%;
+}
+article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+#presentation{
+    margin: 0 10vw;
+}
+#node_span{
+
+}

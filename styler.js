@@ -124,3 +124,10 @@ document.body.addEventListener('wheel', (e)=>{
             divD.style.top = '0'
         }
 })
+
+divD.querySelector('#node_span').addEventListener('mouseenter',()=>{
+    divD.querySelector('section').style.display = 'inline-block'
+    divD.querySelector('section').addEventListener('mouseleave', ()=>{
+        divD.querySelector('section').style.display = 'none'
+    })
+})
