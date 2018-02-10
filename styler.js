@@ -4,15 +4,6 @@ let subCount = 0
 mains.forEach(main=>{
     main.addEventListener('wheel', (e)=>{
         count+= e.deltaY
-        var ac = {
-            top: window.innerheight/2+'px',
-            left: window.innerWidth/2+'px'
-        },
-            bd = {
-                top: window.innerHeight/2+'px',
-                left: -window.innerWidth/2+'px'
-            }
-        console.log(count)
         if(count > 900){
             document.querySelectorAll('div').forEach((div)=>{
                 switch(div.classList.value){
