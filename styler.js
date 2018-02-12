@@ -131,3 +131,11 @@ divD.querySelector('#node_span').addEventListener('mouseenter',()=>{
         divD.querySelector('section').style.display = 'none'
     })
 })
+
+var instantThé = document.querySelector('#timer>span')
+let spanTime;
+setInterval(function(){
+    spanTime = new Date();
+    instantThé.innerHTML = spanTime.toLocaleString();
+},1000)
+//toLocaleString()
