@@ -1,3 +1,11 @@
+/* 
+soft blue: #52adda 
+cool blue: #68b8df
+cool grey: #c9c9c9
+soft grey: #dbdbdb
+soft green: #dbdbdb
+cool green: #b5d954
+*/
 * { margin:0; padding:0; overflow:hidden;}
 main{
     height:100vh;
@@ -10,8 +18,10 @@ div{
     margin-top: 8px;
     height: 48%;
     width:48%;
-    border: solid 1px black;
+    border: solid 4px #c9c9c9;
     position: relative;
+    border-radius: 25px;
+    opacity:1;
 }
 .surprise_main{
     position:absolute;
@@ -21,18 +31,20 @@ div{
     position:absolute;
     top:0;
     opacity:1;
-    background-color: #fff;
+    background-color: #b5d954;
 }
 section{
     display:flex;
     justify-content: center;
     align-items: center;
+    padding:10px;
 }
 .a{
     order:1;
     display:grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 75% 12% 12%;
+    background-color: #52adda;
 }
 #moi{
     grid-row: 1;
@@ -50,6 +62,7 @@ section{
 }
 .b{
     order:2;
+    background-color: #52adda;
 }
 .b section{
     display: grid;
@@ -57,11 +70,23 @@ section{
     height: 100%;
     align-items: flex-start;
 }
+.b aside{
+    grid-row: 1 / 2;
+    grid-column: 1;
+    height:100%;
+    display: flex;
+}
+.b aside p{
+    flex:1;
+}
 .b section ul{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     flex:2;
+}
+.b section ul li {
+    margin: 1vh 0;
 }
 .b article{
     grid-row:2;
@@ -76,8 +101,7 @@ section{
 #timer{
     grid-column: 2;
     grid-row: 1;
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
 }
 #pjs{
     font-weight: bold;
@@ -85,9 +109,15 @@ section{
 }
 .c{
     order:3;
+    background-image: url("./golden-gate-1937.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .d{
     order:4;
+    background-color: #52adda;
 }
 .d h2{
     margin-left: 10vw;

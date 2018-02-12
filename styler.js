@@ -132,10 +132,14 @@ divD.querySelector('#node_span').addEventListener('mouseenter',()=>{
     })
 })
 
-var instantThé = document.querySelector('#timer>span')
+var instantThé = document.querySelector('#direct')
+var timeLapse = document.querySelector('#timelapse')
+let presence = 0
 let spanTime;
 setInterval(function(){
     spanTime = new Date();
-    instantThé.innerHTML = spanTime.toLocaleString();
+    presence++;
+    instantThé.innerHTML =`${spanTime.toLocaleDateString()} ${spanTime.toLocaleTimeString()}`;
+    timeLapse.innerHTML = `<br> Actif depuis ${timeLapse? presence: "Time problem"} ${presence > 1 ? "secondes": "seconde"}.`
 },1000)
 //toLocaleString()
