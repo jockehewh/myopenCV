@@ -21,7 +21,7 @@ div{
     border: solid 4px #c9c9c9;
     position: relative;
     border-radius: 25px;
-    opacity:1;
+    opacity:.8;
 }
 .surprise_main{
     position:absolute;
